@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Scrolling for the app -->
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- LinearLayout for the app -->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+        <!-- Welcome message -->
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="16dp"
+            android:textSize="20sp"
+            android:text="WELCOME to the Baseball Quiz "
+            android:textAllCaps="true"
+            android:gravity="center"
+            android:textStyle="bold"
+            />
+        <!-- Player ist asked to enter his name -->
+        <EditText
+            android:id="@+id/NameText"
+            android:inputType="textPersonName"
+            android:hint="Please enter your Name"
+            style="@style/editStyle"
+            />
+        <!-- Headline for the Questions 1 -->
+        <TextView
+            android:text="Question 1"
+            style="@style/headlineStyle"
+            />
+        <!--Question 1 -->
+        <TextView
+            android:text="The position of this player is?"
+            style="@style/questionStyle"
+            />
+        <!-- Image for the first question -->
+        <ImageView
+            style="@style/imageStyle"
+            android:src="@drawable/pitcher"
+            />
+        <!--EditText for the answer -->
+        <EditText
+            android:id="@+id/UserAnswer1"
+            android:hint="Answer"
+            android:textSize="12sp"
+            style="@style/editStyle"
+            />
+        <!-- Headline for the Questions 2 -->
+        <TextView
+            android:text="Question 2"
+            style="@style/headlineStyle"
+            />
+        <!--Question 1 -->
+        <TextView
+            android:text="The position of this player is?"
+            style="@style/questionStyle"
+            />
+        <!-- Image for the first question -->
+        <ImageView
+            style="@style/imageStyle"
+            android:src="@drawable/catcher"
+            />
+        <!--Check Boxes for the answer -->
+        <CheckBox
+            android:id="@+id/checkBoxAnswer1"
+            android:text="First Baseman"
+            style="@style/checkBoxStyle"
+            />
+        <!--Check Boxes for the answer -->
+        <CheckBox
+            android:id="@+id/checkBoxAnswer2"
+            android:text="Second Baseman"
+            style="@style/checkBoxStyle"
+            />
+        <!--Check Boxes for the answer -->
+        <CheckBox
+            android:id="@+id/checkBoxAnswer3"
+            android:text="Catcher"
+            style="@style/checkBoxStyle"
+            />
+        <!-- Headline for the Questions 3 -->
+        <TextView
+            android:text="Question 3"
+            style="@style/headlineStyle"
+            />
+        <!--Question  -->
+        <TextView
+            android:text="The position of this player is?"
+            style="@style/questionStyle"
+            />
+        <!-- Image for the first question -->
+        <ImageView
+            style="@style/imageStyle"
+            android:src="@drawable/firstbaseman"
+            />
+        <!--EditText for the answer -->
+        <EditText
+            android:id="@+id/UserAnswer3"
+            android:hint="Answer"
+            android:textSize="12sp"
+            style="@style/editStyle"
+            />
+        <!-- Headline for the Questions 4 -->
+        <TextView
+            android:text="Question 4"
+            style="@style/headlineStyle"
+            />
+        <!--Question  -->
+        <TextView
+            android:text="The position of this player is?"
+            style="@style/questionStyle"
+            />
+        <!-- Image for the first question -->
+        <ImageView
+            style="@style/imageStyle"
+            android:src="@drawable/outfielder"
+            />
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/RGroup">
+        <!--RadioButton for the answer -->
+        <RadioButton
+            android:transitionName="Check"
+            android:id="@+id/radioButton1"
+            android:text="Outfielder"
+            style="@style/checkBoxStyle"
+            />
+        <RadioButton
+            android:transitionName="Check"
+            android:id="@+id/radioButton2"
+            android:text="Catcher"
+            style="@style/checkBoxStyle"
+            />
+        <RadioButton
+            android:transitionName="Check"
+            android:id="@+id/radioButton3"
+            android:text="ShortStop"
+            style="@style/checkBoxStyle"
+            />
+        </RadioGroup>
+        <!--  Button to submit the answers -->
+        <Button
+            android:id="@+id/button_Order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:text="Submit Answers"
+            android:onClick="submitAnswers"
+            />
+        <TextView
+            android:id="@+id/summary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:text=""
+            />
+    </LinearLayout>
+</ScrollView>
