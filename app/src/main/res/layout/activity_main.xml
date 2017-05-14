@@ -60,30 +60,36 @@
             />
         <!--Question 1 -->
         <TextView
-            android:text="The position of this player is?"
+            android:text="What does the Scoreboard show you (multiple answer are correct) ?"
             style="@style/questionStyle"
             />
         <!-- Image for the first question -->
         <ImageView
             style="@style/imageStyle"
-            android:src="@drawable/catcher"
+            android:src="@drawable/scoreboard"
             />
         <!--Check Boxes for the answer -->
         <CheckBox
             android:id="@+id/checkBoxAnswer1"
-            android:text="First Baseman"
+            android:text="The Home pitcher has less pitches than the Guest pitcher"
             style="@style/checkBoxStyle"
             />
         <!--Check Boxes for the answer -->
         <CheckBox
             android:id="@+id/checkBoxAnswer2"
-            android:text="Second Baseman"
+            android:text="The game went to extra innings (+ 9 innings)"
             style="@style/checkBoxStyle"
             />
         <!--Check Boxes for the answer -->
         <CheckBox
             android:id="@+id/checkBoxAnswer3"
-            android:text="Catcher"
+            android:text="The Home team has more runs than the visitors"
+            style="@style/checkBoxStyle"
+            />
+        <!--Check Boxes for the answer -->
+        <CheckBox
+            android:id="@+id/checkBoxAnswer4"
+            android:text="The Visitors have more runs than the Home team"
             style="@style/checkBoxStyle"
             />
         <!-- Headline for the Questions 3 -->

@@ -39,10 +39,10 @@ public class MainActivity extends AppCompatActivity {
         /* Check if the 2. answer is correct an deliver de right input for the summary */
     public String doChecksecondQuestion() {
         String answerText = "";
-        if (checkStatusCheckbox1()== false && checkStatusCheckbox2()== false && checkStatusCheckbox3()== true ) {
-            answerText = "Your answer was correct - Catcher";
+        if (checkStatusCheckbox1()== true && checkStatusCheckbox2()== false && checkStatusCheckbox3()== true && checkStatusCheckbox4()== false) {
+            answerText = "Your answer was correct - 1 and 3";
         } else {
-            answerText = "Your answer was not correct. The correct answer is CATCHER";
+            answerText = "Your answer was not correct. The correct answer is 1 AND 3";
         }
         return answerText;
     }
@@ -71,8 +71,7 @@ public class MainActivity extends AppCompatActivity {
 /* get triggert from the Submit Answers Button and calls the DisplayMessage Meth with the needed imput*/
     }
     public void submitAnswers(View view) {
-        Toast.makeText(this, "See the answers below",Toast.LENGTH_SHORT).show();
-        displayMessage(answerSummary());
+        Toast.makeText(this, answerSummary(),Toast.LENGTH_LONG).show();
     }
 
 /* Displays the text in the summary TextView */
@@ -106,6 +105,10 @@ public class MainActivity extends AppCompatActivity {
         return (getStatus.isChecked());
     }
     private boolean checkStatusCheckbox3() {
+        CheckBox getStatus = (CheckBox) findViewById(R.id.checkBoxAnswer3);
+        return (getStatus.isChecked());
+    }
+    private boolean checkStatusCheckbox4() {
         CheckBox getStatus = (CheckBox) findViewById(R.id.checkBoxAnswer3);
         return (getStatus.isChecked());
     }
