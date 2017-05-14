@@ -71,7 +71,7 @@
         <!--Check Boxes for the answer -->
         <CheckBox
             android:id="@+id/checkBoxAnswer1"
-            android:text="The Home pitcher has less pitches than the Guest pitcher"
+            android:text="The Home pitcher has less pitches than the Guest pitcher in total"
             style="@style/checkBoxStyle"
             />
         <!--Check Boxes for the answer -->
